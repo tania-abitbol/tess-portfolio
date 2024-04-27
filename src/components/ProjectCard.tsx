@@ -5,6 +5,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   reverse?: boolean;
+  labels: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -12,8 +13,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   image,
   reverse,
+  labels,
 }) => {
-  const cardClasses = `flex ${
+  const cardClasses = `flex gap-8 md:flex-col  ${
     reverse ? "flex-row-reverse" : "flex-row"
   } items-center shadow-lg rounded-lg overflow-hidden`;
   const textClasses = `p-4 w-1/2`;
@@ -22,22 +24,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className={cardClasses}>
       <div className={textClasses}>
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-        <div className="h-1 w-8 bg-primary mb-4"></div>
-        <div>
-          <ul className="flex gap-4 mt-2 mb-4">
-            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
-              React
-            </li>
-            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
-              TailwindCSS
-            </li>
-            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
-              TypeScript
-            </li>
-          </ul>
+        <h2 className="text-2xl font-semibold mb-6">{title}</h2>
+        <div className="h-1 w-8 bg-primary mb-6"></div>
+        <div className=" flex gap-4 mb-6">
+          {labels.map((label, index) => (
+            <p
+              key={index}
+              className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase"
+            >
+              {label}
+            </p>
+          ))}
         </div>
-        <p className="mb-4">{description}</p>
+
+        <p className="text-base font-normal">{description}</p>
       </div>
       <div className={imageClasses}>
         <img src={image} alt={title} className="object-cover w-full h-full" />

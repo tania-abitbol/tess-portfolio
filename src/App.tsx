@@ -10,10 +10,11 @@ import alan from "./assets/alan.png";
 import clubFrance from "./assets/clubFrance.png";
 import oeeo from "./assets/ooeo.png";
 import unlock from "./assets/unlock.png";
+import amacelio from "./assets/amaclio.png";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-black text-white flex flex-col px-40">
+    <div className="bg-black text-white flex flex-col lg:px-40 px-4">
       <div className="min-h-screen flex flex-col">
         <NavBar />
         <IntroductionText />
@@ -23,37 +24,48 @@ const App: React.FC = () => {
           className="w-10 h-10 animate-bounce mt-4 self-center mb-12"
         />
       </div>
-
-      <div>
-        <p className="text-3xl font-semibold mb-8 uppercase">
-          Projets sélectionnés
-        </p>
+      <p className="text-3xl font-semibold mb-8 uppercase">
+        Projets sélectionnés
+      </p>
+      <div className="flex flex-col gap-40">
         <ProjectCard
           title="ALAN"
           description="Alan est une start-up française d'assurance santé fondée en 2016. Elle se démarque par son approche numérique conviviale et transparente, offrant des solutions d'assurance simples et accessibles. Son objectif est de rendre les soins de santé plus faciles à comprendre et à utiliser pour ses clients grâce à la technologie."
           image={alan}
           reverse={true}
+          labels={["DESIGN UX UI", "POST MÉDIAS SOCIAUX", "SLIDES"]}
         />
         <ProjectCard
           title="CLUB FRANCE • QUARTERBACK"
           description="Quarterback devient l'agence hospitalités du Club France pour les Jeux olympiques et paralympiques de Paris 2024 ! Club France, la plus grande fan zone des bleus pour les jeux de Paris 2024."
           image={clubFrance}
           reverse={false}
+          labels={["DESIGN UX UI"]}
         />
         <ProjectCard
-          title="CLUB FRANCE • QUARTERBACK"
-          description="Quarterback devient l'agence hospitalités du Club France pour les Jeux olympiques et paralympiques de Paris 2024 ! Club France, la plus grande fan zone des bleus pour les jeux de Paris 2024."
+          title="UNLOCK-M"
+          description="La plateforme UnlockM, permet aux professionnels du marketing B2B de suivre des formations adaptées à leur emploi du temps, de dialoguer avec des spécialistes renommés du secteur, échanger des idées et renforcer leurs compétences."
           image={unlock}
           reverse={true}
+          labels={["DESIGN UX UI", "POST MÉDIAS SOCIAUX", "SLIDES"]}
         />
         <ProjectCard
-          title="CLUB FRANCE • QUARTERBACK"
-          description="Quarterback devient l'agence hospitalités du Club France pour les Jeux olympiques et paralympiques de Paris 2024 ! Club France, la plus grande fan zone des bleus pour les jeux de Paris 2024."
+          title="OOEO"
+          description="OOEO est une agence digital spécialisée dans la stratégie digitale, offrant des solutions complètes aux entreprises désireuses de propulser leur présence en ligne.Que ce soit pour les entreprises qui ont besoin d'un site web évolutif, d'un design ou d'une identité de marque à la hauteur de leurs ambitions numériques."
           image={oeeo}
           reverse={false}
+          labels={["DESIGN UX UI", "POST MÉDIAS SOCIAUX"]}
+        />
+        <ProjectCard
+          title="AMACLIO PRODUCTION"
+          description="Amaclio Productions imagine, conçoit et produit des spectacles prestigieux mettant en scène les monuments emblématiques de l'histoire de France. Parmi leurs réalisations figurent la création de la Cité de l'Histoire et de l'Éternelle Notre-Dame, entre autres."
+          image={amacelio}
+          reverse={true}
+          labels={["DESIGN UX UI"]}
         />
       </div>
       <GridItems />
+      <div className="h-0.5 bg-grey" />
       <ContactSection />
     </div>
   );
