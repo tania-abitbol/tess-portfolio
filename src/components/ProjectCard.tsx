@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   reverse,
   labels,
 }) => {
-  const cardClasses = `flex gap-8 md:flex-col  ${
+  const cardClasses = `flex gap-8 fle-col  ${
     reverse ? "flex-row-reverse" : "flex-row"
   } items-center shadow-lg rounded-lg overflow-hidden`;
   const textClasses = `p-4 w-1/2`;
