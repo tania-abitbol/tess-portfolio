@@ -3,16 +3,14 @@ import React from "react";
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string; // URL de l'image du projet
-  link: string; // Lien pour plus d'informations ou pour une brochure
-  reverse?: boolean; // Si true, affiche le composant dans le style inversé
+  image: string;
+  reverse?: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   image,
-  link,
   reverse,
 }) => {
   const cardClasses = `flex ${
@@ -24,14 +22,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className={cardClasses}>
       <div className={textClasses}>
-        <h2 className="text-2xl font-bold mb-2">{title}</h2>
+        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+        <div className="h-1 w-8 bg-primary mb-4"></div>
+        <div>
+          <ul className="flex gap-4 mt-2 mb-4">
+            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
+              React
+            </li>
+            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
+              TailwindCSS
+            </li>
+            <li className="bg-greyDark text-white text-xs px-4 py-3 rounded-full uppercase">
+              TypeScript
+            </li>
+          </ul>
+        </div>
         <p className="mb-4">{description}</p>
-        <a
-          href={link}
-          className="text-pink-600 hover:text-pink-700 transition duration-300 ease-in-out"
-        >
-          En savoir plus
-        </a>
       </div>
       <div className={imageClasses}>
         <img src={image} alt={title} className="object-cover w-full h-full" />

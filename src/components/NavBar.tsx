@@ -1,22 +1,32 @@
 import React from "react";
+import logo from "../assets/logo.svg";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center p-5">
-      <div className="text-xl font-semibold">TessAbitbol.</div>
-      <div className="flex gap-4">
-        <a href="/" className="hover:text-gray-300 transition-colors">
+    <nav className="flex justify-between items-center p-6">
+      <img src={logo} alt="Logo" />
+      <div className="flex gap-8 items-center">
+        <a
+          href="/"
+          className="hover:text-primary text-grey transition-colors text-sm font-semibold tracking-wider"
+        >
           ACCUEIL
         </a>
-        <a href="/projects" className="hover:text-gray-300 transition-colors">
+        <a
+          href="/projects"
+          className="hover:text-primary text-grey transition-colors text-sm font-semibold tracking-wider"
+        >
           PROJETS
         </a>
-        <a href="/cv" className="hover:text-gray-300 transition-colors">
+        <a
+          href="/cv"
+          className="hover:text-primary text-grey transition-colors text-sm font-semibold tracking-wider"
+        >
           MON CV
         </a>
         <a
           href="/contact"
-          className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transition-colors"
+          className="bg-primary text-white text-sm p-4 font-semibold rounded-lg tracking-wider"
         >
           ME CONTACTER
         </a>
