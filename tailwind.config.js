@@ -8,6 +8,7 @@ module.exports = {
         primary: "#FF469F",
         grey: "#FDFDFD8C",
         greyDark: "rgba(255, 255, 255, 0.15)",
+        transp: "#0C0C0C95",
       },
       fontFamily: {
         sans: ["Work Sans", "sans-serif"],

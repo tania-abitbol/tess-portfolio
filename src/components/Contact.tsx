@@ -5,23 +5,33 @@ import Email from "../assets/Mail.svg";
 import Dribble from "../assets/Dribble.svg";
 
 const ContactSection: React.FC = () => {
+  const hoverStyle = { filter: "brightness(0) invert(1)" };
   return (
-    <div className="bg-black text-white p-8 flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-semibold mb-4">Prêt à créer ensemble ?</h2>
-      <p className="mb-8">Prenons le temps d'en discuter !</p>
+    <div
+      className="bg-black  p-8 flex flex-col items-center justify-center mb-40"
+      id="contact"
+    >
+      <h2 className="text-5xl mb-2 text-grey font-light">
+        Prêt à{" "}
+        <span className="font-semibold text-white">créer ensemble ?</span>
+      </h2>
+      <p className="mb-8 font-light">Prenons le temps d'en discuter !</p>
       <div className="flex gap-6">
-        <a href="mailto:contact@example.com" aria-label="Email">
+        <a href="mailto:tess.abitbol13@gmail.com" aria-label="Email">
           <div className="text-2xl hover:text-gray-300">
             <img src={Email} alt="email" />
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn">
-          <div className="text-2xl hover:text-gray-300">
+        <a
+          href="https://www.linkedin.com/in/tess-abitbol-139910224/"
+          aria-label="LinkedIn"
+        >
+          <div className="text-2xl">
             <img src={Linkedin} alt="linkedin" />
           </div>
         </a>
-        <a href="https://yourwebsite.com" aria-label="Website">
-          <div className="text-2xl hover:text-gray-300">
+        <a href="https://dribbble.com/Tess_abitbol" aria-label="Website">
+          <div className="text-2xl">
             <img src={Dribble} alt="dribble" />
           </div>
         </a>
