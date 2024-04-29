@@ -5,7 +5,6 @@ import Email from "../assets/Mail.svg";
 import Dribble from "../assets/Dribble.svg";
 
 const ContactSection: React.FC = () => {
-  const hoverStyle = { filter: "brightness(0) invert(1)" };
   return (
     <div
       className="bg-black  p-8 flex flex-col items-center justify-center mb-40"

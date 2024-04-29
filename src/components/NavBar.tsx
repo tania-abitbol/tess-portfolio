@@ -6,7 +6,7 @@ const cv = require("../assets/cv.pdf");
 const NavBar: React.FC = () => {
   return (
     <nav className="flex justify-between items-center p-6">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" className="hidden sm:block" />
       <div className="flex gap-8 items-center">
         <a
           href="/"
@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
         </a>
         <a
           href="/#contact"
-          className="bg-primary text-white text-sm p-4 font-semibold rounded-lg tracking-wider"
+          className="hidden sm:block bg-primary text-white text-sm p-4 font-semibold rounded-lg tracking-wider"
         >
           ME CONTACTER
         </a>

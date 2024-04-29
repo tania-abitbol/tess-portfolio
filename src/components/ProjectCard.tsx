@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   reverse,
   labels,
 }) => {
-  const cardClasses = `flex gap-12 ${
+  const cardClasses = `flex flex-col sm:flex-row gap-12 ${
     reverse ? "flex-row-reverse" : "flex-row"
   } items-center shadow-lg rounded-lg overflow-hidden`;
 
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <img
           src={image}
           alt={title}
-          className="object-cover max-w-[705px] max-h-[426px]"
+          className="object-cover max-w-[455px]  max-h-[176px] sm:max-w-[705px] sm:max-h-[426px]"
         />
       </div>
     </div>

@@ -15,16 +15,18 @@ import amacelio from "./assets/amaclio.png";
 const App: React.FC = () => {
   return (
     <div className="bg-black text-white flex flex-col items-center scroll-smooth">
-      <div className="max-w-[1120px]">
+      <div className="max-w-[320px] sm:max-w-[1120px]">
         <div className="min-h-screen flex flex-col">
           <NavBar />
           <IntroductionText />
-          <img
-            src={chevron}
-            alt="Chevron"
-            className="w-10 h-10 animate-bounce mt-4 self-center mb-12 scroll-smooth	"
-            id="projects"
-          />
+          <a href="#projects" className="mt-4 self-center mb-12 scroll-smooth">
+            <img
+              src={chevron}
+              alt="Chevron"
+              className="w-10 h-10 animate-bounce "
+              id="projects"
+            />
+          </a>
         </div>
         <p className="text-3xl font-semibold mb-[76px] uppercase">
           Projets sélectionnés
