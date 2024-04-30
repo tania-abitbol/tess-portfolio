@@ -20,20 +20,20 @@ export const GridItems: React.FC = () => {
     {
       title: "Coté Nature",
       thumbnail: coteNature,
-      description: "Refonte UX UI",
+      description: "Newsletter",
     },
     {
-      title: "Oeoo",
+      title: "Omnitune",
       thumbnail: oeeo,
-      description: "Refonte UX UI",
+      description: "Design UX UI",
     },
     {
-      title: "Billeterie",
+      title: "Billeterie en ligne",
       thumbnail: billeterie,
-      description: "Refonte UX UI",
+      description: "Design UX UI",
     },
     {
-      title: "Unlock-M",
+      title: "Maison Apicole de Lugos",
       thumbnail: unlockM,
       description: "Refonte UX UI",
     },
