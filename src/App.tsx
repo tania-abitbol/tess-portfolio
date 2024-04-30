@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+
 import NavBar from "./components/NavBar";
 import IntroductionText from "./components/IntroductionText";
 import ProjectCard from "./components/ProjectCard";
@@ -19,11 +21,11 @@ const App: React.FC = () => {
         <NavBar />
         <div className="min-h-screen flex flex-col">
           <IntroductionText />
-          <a href="#projects" className="mt-4 self-center mb-12 scroll-smooth ">
+          <a href="#projects" className="self-center mb-12 scroll-smooth">
             <img
               src={chevron}
               alt="Chevron"
-              className="w-10 h-10 animate-bounce "
+              className="w-10 h-10 animate-bounce mt-[-100px]"
               id="projects"
             />
           </a>

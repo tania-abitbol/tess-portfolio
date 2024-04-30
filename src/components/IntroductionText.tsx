@@ -2,7 +2,7 @@ import React from "react";
 
 const IntroductionText: React.FC = () => {
   return (
-    <div className="flex-grow flex items-center justify-center self-center animate-pulse ">
+    <div className="flex-grow flex items-center justify-center self-center">
       <div>
         <h1 className="text-xl sm:text-3xl lg:text-5xl font-light text-center text-grey tracking-tight">
           Hello ! Je suis Tess, une étudiante{" "}
