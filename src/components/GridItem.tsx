@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import PortfolioItem from "./Item";
 
-import ecole from "../assets/crer-son-ecole.png";
-import coteNature from "../assets/cote-nature.png";
-import oeeo from "../assets/ooeo.png";
-import billeterie from "../assets/billeterie.png";
-import unlockM from "../assets/unlock-m.png";
-import eCommerce from "../assets/e-commerce.png";
+import ecole from "../assets/image-ecole.png";
+import coteNature from "../assets/image-nature.png";
+import oeeo from "../assets/image-amelio.png";
+import billeterie from "../assets/image-billet.png";
+import unlockM from "../assets/image-miel.png";
+import eCommerce from "../assets/image-ecommerce.png";
 
 export const GridItems: React.FC = () => {
   const [clickedIndex, setClickedIndex] = useState<null | number>(null);

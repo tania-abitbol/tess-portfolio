@@ -1,5 +1,4 @@
 import React from "react";
-import AOS from "aos";
 
 import NavBar from "./components/NavBar";
 import IntroductionText from "./components/IntroductionText";

@@ -34,7 +34,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
           <img
             src={thumbnail}
             alt={title}
-            className="max-w-[800px] max-h-[477px] object-cover z-20 "
+            className="max-w-[800px] max-h-[477px] object-cover rounded-2xl z-20 "
           />
         </div>
       )}
@@ -51,8 +51,10 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
           className="max-w-[347px] max-h-[207px] object-cover"
         />
         {isHovered && (
-          <div className="p-4 absolute top-0 left-0 right-0 bottom-0 hover:bg-transp transition-colors duration-500 ease-in-out flex items-center justify-center flex-col">
-            <h2 className="font-semibold text-2xl mb-2 text-white">{title}</h2>
+          <div className="absolute top-0 left-0 right-0 bottom-0 hover:bg-transp transition-colors duration-500 ease-in-out flex items-center justify-center flex-col">
+            <h2 className="font-semibold text-2xl mb-2 text-white mt-4">
+              {title}
+            </h2>
             <div className="h-0.5 w-2 bg-white mb-2"></div>
             <p className="text-lg mb-4 text-white">{description}</p>
           </div>
