@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <NavBar />
         <div className="min-h-screen flex flex-col">
           <IntroductionText />
-          <a href="#projects" className="mt-4 self-center mb-12 scroll-smooth">
+          <a href="#projects" className="mt-4 self-center mb-12 scroll-smooth ">
             <img
               src={chevron}
               alt="Chevron"
