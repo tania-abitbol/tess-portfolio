@@ -20,6 +20,7 @@ const ContactSection: React.FC = () => {
           href="mailto:tess.abitbol13@gmail.com"
           aria-label="Email"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Email} alt="email" />
@@ -29,6 +30,7 @@ const ContactSection: React.FC = () => {
           href="https://www.linkedin.com/in/tess-abitbol-139910224/"
           target="_blank"
           aria-label="LinkedIn"
+          rel="noreferrer"
         >
           <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Linkedin} alt="linkedin" />
@@ -38,6 +40,7 @@ const ContactSection: React.FC = () => {
           href="https://dribbble.com/Tess_abitbol"
           aria-label="Website"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Dribble} alt="dribble" />

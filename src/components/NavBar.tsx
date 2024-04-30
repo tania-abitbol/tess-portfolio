@@ -23,6 +23,7 @@ const NavBar: React.FC = () => {
         <a
           href={cv}
           target="_blank"
+          rel="noreferrer"
           className="hover:text-white text-grey transition-colors text-sm font-semibold tracking-wider"
         >
           MON CV
