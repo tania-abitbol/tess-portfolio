@@ -22,7 +22,7 @@ const ContactSection: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="text-2xl opacity-50 hover:opacity-100">
+          <div className="text-2xl opacity-50 hover:opacity-100 transition-opacity duration-500">
             <img src={Email} alt="email" />
           </div>
         </a>
@@ -32,7 +32,7 @@ const ContactSection: React.FC = () => {
           aria-label="LinkedIn"
           rel="noreferrer"
         >
-          <div className="text-2xl opacity-50 hover:opacity-100">
+          <div className="text-2xl opacity-50 hover:opacity-100 transition-opacity duration-500">
             <img src={Linkedin} alt="linkedin" />
           </div>
         </a>
@@ -42,7 +42,7 @@ const ContactSection: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="text-2xl opacity-50 hover:opacity-100">
+          <div className="text-2xl opacity-50 hover:opacity-100 transition-opacity duration-500">
             <img src={Dribble} alt="dribble" />
           </div>
         </a>
