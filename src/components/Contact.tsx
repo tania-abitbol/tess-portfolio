@@ -14,7 +14,9 @@ const ContactSection: React.FC = () => {
         Prêt à{" "}
         <span className="font-semibold text-white">créer ensemble ?</span>
       </h2>
-      <p className="mb-8 font-light">Prenons le temps d'en discuter !</p>
+      <p className="mb-8 text-xl font-light">
+        Prenons le temps d'en discuter !
+      </p>
       <div className="flex gap-6 text-red-400">
         <a
           href="mailto:tess.abitbol13@gmail.com"
