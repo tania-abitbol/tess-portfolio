@@ -10,7 +10,7 @@ const ContactSection: React.FC = () => {
       className="bg-black  p-8 flex flex-col items-center justify-center mb-40"
       id="contact"
     >
-      <h2 className="text-3xl text-center  sm:text-5xl mb-2 text-red-400 font-light">
+      <h2 className="text-3xl text-center  sm:text-5xl mb-2 text-grey font-light">
         Prêt à{" "}
         <span className="font-semibold text-white">créer ensemble ?</span>
       </h2>
