@@ -16,8 +16,8 @@ const App: React.FC = () => {
   return (
     <div className="bg-black text-white flex flex-col items-center scroll-smooth">
       <div className="max-w-[320px] sm:max-w-[1120px]">
+        <NavBar />
         <div className="min-h-screen flex flex-col">
-          <NavBar />
           <IntroductionText />
           <a href="#projects" className="mt-4 self-center mb-12 scroll-smooth">
             <img

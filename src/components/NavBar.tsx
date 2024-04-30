@@ -5,7 +5,7 @@ const cv = require("../assets/cv.pdf");
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center p-6">
+    <nav className="flex justify-between items-center p-6 sticky top-0 bg-black z-10">
       <img src={logo} alt="Logo" className="hidden sm:block" />
       <div className="flex gap-8 items-center">
         <a
