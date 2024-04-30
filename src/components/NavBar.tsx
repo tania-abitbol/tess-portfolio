@@ -22,13 +22,13 @@ const NavBar: React.FC = () => {
         </a>
         <a
           href={cv}
-          download="Tess_Abitbol_CV"
+          target="_blank"
           className="hover:text-white text-grey transition-colors text-sm font-semibold tracking-wider"
         >
           MON CV
         </a>
         <a
-          href="/#contact"
+          href="mailto:tess.abitbol13@gmail.com"
           className="hidden sm:block bg-primary text-white text-sm p-4 font-semibold rounded-lg tracking-wider"
         >
           ME CONTACTER

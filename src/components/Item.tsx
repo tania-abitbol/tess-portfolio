@@ -40,7 +40,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
       )}
 
       <div
-        className="rounded-lg shadow-md overflow-hidden relative transition-colors duration-300 ease-in-out cursor-pointer "
+        className="rounded-lg shadow-md overflow-hidden relative transition-colors duration-500 ease-in-out cursor-pointer "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleItemClick}
@@ -51,7 +51,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
           className="max-w-[347px] max-h-[207px] object-cover"
         />
         {isHovered && (
-          <div className="p-4 absolute top-0 left-0 right-0 bottom-0 hover:bg-transp transition-colors duration-400 ease-in-out flex items-center justify-center flex-col">
+          <div className="p-4 absolute top-0 left-0 right-0 bottom-0 hover:bg-transp transition-colors duration-500 ease-in-out flex items-center justify-center flex-col">
             <h2 className="font-semibold text-2xl mb-2 text-white">{title}</h2>
             <div className="h-0.5 w-2 bg-white mb-2"></div>
             <p className="text-lg mb-4 text-white">{description}</p>
@@ -59,7 +59,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
         )}
       </div>
       {isClicked && (
-        <div className="p-4 absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-90 transition-colors duration-400 ease-in-out flex items-center justify-center flex-col z-10"></div>
+        <div className="p-4 absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-90 transition-colors duration-500 ease-in-out flex items-center justify-center flex-col z-10"></div>
       )}
     </div>
   );

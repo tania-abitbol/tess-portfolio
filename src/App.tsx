@@ -31,7 +31,7 @@ const App: React.FC = () => {
         <p className="text-3xl font-semibold mb-[76px] uppercase">
           Projets sélectionnés
         </p>
-        <div className="flex flex-col gap-40">
+        <div className="flex flex-col sm:gap-40 gap-16">
           <ProjectCard
             title="ALAN"
             description="Alan est une start-up française d'assurance santé fondée en 2016. Elle se démarque par son approche numérique conviviale et transparente, offrant des solutions d'assurance simples et accessibles. Son objectif est de rendre les soins de santé plus faciles à comprendre et à utiliser pour ses clients grâce à la technologie."
