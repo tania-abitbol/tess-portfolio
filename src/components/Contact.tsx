@@ -10,18 +10,18 @@ const ContactSection: React.FC = () => {
       className="bg-black  p-8 flex flex-col items-center justify-center mb-40"
       id="contact"
     >
-      <h2 className="text-3xl text-center  sm:text-5xl mb-2 text-grey font-light">
+      <h2 className="text-3xl text-center  sm:text-5xl mb-2 text-red-400 font-light">
         Prêt à{" "}
         <span className="font-semibold text-white">créer ensemble ?</span>
       </h2>
       <p className="mb-8 font-light">Prenons le temps d'en discuter !</p>
-      <div className="flex gap-6">
+      <div className="flex gap-6 text-red-400">
         <a
           href="mailto:tess.abitbol13@gmail.com"
           aria-label="Email"
           target="_blank"
         >
-          <div className="text-2xl hover:text-gray-300">
+          <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Email} alt="email" />
           </div>
         </a>
@@ -30,7 +30,7 @@ const ContactSection: React.FC = () => {
           target="_blank"
           aria-label="LinkedIn"
         >
-          <div className="text-2xl">
+          <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Linkedin} alt="linkedin" />
           </div>
         </a>
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
           aria-label="Website"
           target="_blank"
         >
-          <div className="text-2xl">
+          <div className="text-2xl opacity-50 hover:opacity-100">
             <img src={Dribble} alt="dribble" />
           </div>
         </a>
