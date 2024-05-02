@@ -35,7 +35,7 @@ export const GridItems: React.FC = () => {
     {
       title: "Maison Apicole de Lugos",
       thumbnail: unlockM,
-      description: "Refonte UX UI",
+      description: "Design UX UI",
     },
     {
       title: "E-commerce",

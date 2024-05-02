@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
         Prêt à{" "}
         <span className="font-semibold text-white">créer ensemble ?</span>
       </h2>
-      <p className="mb-8 text-xl font-light">
+      <p className="mb-8 text-base font-light">
         Prenons le temps d'en discuter !
       </p>
       <div className="flex gap-6 text-red-400">
